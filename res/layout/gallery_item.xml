@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/gallery_item_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -12,20 +13,20 @@
     android:layout_alignParentTop="true">
 
     <TextView
-        android:id="@+id/author_textview"
+        android:id="@+id/item_author_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:text="Jameson"/>
+        android:layout_gravity="start"/>
 
     <TextView
-        android:id="@+id/date_textview"
+        android:id="@+id/item_date_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"/>
 </LinearLayout>
 
 <ImageView
+    android:id="@+id/item_imageview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignBottom="@+id/item_header_layout"/>
